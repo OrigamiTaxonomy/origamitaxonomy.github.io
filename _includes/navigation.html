@@ -1,0 +1,77 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <div class="across">
+    <h1><a href="/" class="no-underline hover">ORIGAMI TAXONOMY</a></h1>
+    <h1><a href="/" class="no-underline2 hover">ORIGAMI<br>TAXONOMY</a></h1>
+    <button onclick="myFunction()" class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar mid-bar"></div>
+      <div class="bar"></div>
+    </button>
+  </div>
+  <div class="filler">
+    <div class="sidenav" id="myDIV">
+      <!-- "/" links to homepage without adding index.html to web address-->
+      <a href="/" class="link a2">Home</a>
+      <div class="dropdown">
+        <button onclick="myFunction1()" class="dropbtn">Designs <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown1" class="dropdown-content">
+
+          <a class="level-2 unique a2" href="/designs/all/all.html" id="hover">All</a>
+
+          <button onclick="myFunction2a()" class="dropbtn level-2 a2" id="hover">Animate <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown2a" class="dropdown-content smaller">
+            <a href="/designs/animate/vertebrates/vertebrates.html" class="level-3 a2"><i>Vertebrates</i></a>
+            <a href="/designs/animate/invertebrates/invertebrates.html" class="level-3 a2"><i>Invertebrates</i></a>
+            <a href="/designs/animate/plants/plants.html" class="level-3 a2"><i>Plants</i></a>
+            <a href="/designs/animate/human-figures/human-figures.html" class="level-3 a2"><i>Human Figures</i></a>
+            <a href="/designs/animate/fantasy-creatures/fantasy-creatures.html" class="level-3 a2"><i>Fantasy Creatures</i></a>
+          </div>
+
+          <button onclick="myFunction2b()" class="dropbtn level-2" id="hover">Inanimate <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown2b" class="dropdown-content smaller">
+            <a href="/designs/inanimate/tessellations/tessellations.html" class="level-3 a2"><i>Tessellations</i></a>
+            <a href="/designs/inanimate/modulars/modulars.html" class="level-3 a2"><i>Modulars</i></a>
+            <a href="/designs/inanimate/miscellaneous/miscellaneous.html" class="level-3 a2"><i>Miscellaneous</i></a>
+          </div>
+
+        </div>
+      </div>
+      <a class="link a2" href="/gallery/gallery.html">Gallery</a>
+      <a class="link a2" href="/book-reviews/book-reviews.html">Book Reviews</a>
+      <a class="link a2" href="/useful-links/useful-links.html">Useful Links</a>
+
+    </div>
+
+  </div>
+</body>
+
+<script>
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+  function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+  }
+
+  function myFunction2a() {
+    document.getElementById("myDropdown2a").classList.toggle("show");
+  }
+
+  function myFunction2b() {
+    document.getElementById("myDropdown2b").classList.toggle("show");
+  }
+
+  // Menu button toggles menu for mobile display
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>

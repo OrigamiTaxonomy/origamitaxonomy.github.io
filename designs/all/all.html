@@ -1,0 +1,26 @@
+---
+layout: default
+title: All Designs
+---
+
+<head>
+  <link href="all.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<div class="right">
+  <h2 class="heading">All Designs [<div id="countDisplay"></div>]</h2><br>
+  <p>If you don't want to navigate my nested dropdown menus, how about peruse every design on one page!</p><br>
+
+
+  {% include designs.html %}
+
+</div>
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".content").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>

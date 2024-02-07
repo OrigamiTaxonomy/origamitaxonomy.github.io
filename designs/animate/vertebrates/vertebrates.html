@@ -1,0 +1,31 @@
+---
+layout: default
+title: Vertebrate Designs
+---
+
+<head>
+  <link href="../../all/all.css" type="text/css" rel="stylesheet">
+  <link href="vertebrates.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Vertebrates [<div id="countDisplay"></div>]</h2><br>
+  <div class="read-more-div">
+    <p id="overview">Vertebrates (most of the phylum chordata) are animals with a vertebral column, also known as a spine or backbone. They are commonly split into five "classes": mammalia (mammals), aves (birds), reptilia (reptiles), amphibia (amphibians), and
+      pisces (fish). Of course, these are just broad classifications, but they give a good impression of what animals are classed as vertebrates. One of the biggest challenges in designing vertebrates is getting the proportions of each appendage
+      correct
+      whilst maintaining "volume" to give the appearance of muscle. To increase realism, texture can be added such as with the turtle shell below, or even scales and feathers.</p>
+      <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+  <br>
+  {% include designs.html %}
+</div>
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".vertebrates").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>

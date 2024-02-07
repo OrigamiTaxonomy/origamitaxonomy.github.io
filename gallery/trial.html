@@ -1,0 +1,149 @@
+---
+layout: default
+title: Gallery
+---
+
+<head>
+  <link href="gallery.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Gallery</h2><br>
+  <div class="read-more-div">
+    <p id="overview">This page is dedicated to my best folds of other peoples’ designs. As much as I like designing my own origami, it’s always nice to see how other people overcome this challenge, whether that be through diagrams, crease patterns,
+      or otherwise. It’s also a great way to test myself against the standards of other people, and to work on certain aspects of my folding, such as shaping, to implement in my own designs. In the end, though, I fold other peoples’ designs for the pure
+      joy of seeing some of these amazing designs come to life in my own hands.</p>
+    <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+
+  <br>
+
+  <p class="red">Note: click on any of the pictures below to toggle information.</p><br>
+
+  <br>
+
+  <div class="image-gallery">
+
+    <div class="container" onclick="toggleInformation(this)">
+      <div class="overlay">American Bison</div>
+      <img class="gallery-image" src="American Bison - Shuki Kato.jpg" alt="American Bison">
+      <div class="information-container">
+        Model: American Bison
+        <p>Designer: Shuki Kato</p>
+        Diagrams: Origami Nature Study
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <div class="overlay">Asian Elephant</div>
+      <img class="gallery-image" src="Asian Elephant - Shuki Kato.jpg" alt="Asian Elephant">
+      <div class="information-container">
+          Model: Asian Elephant
+          <p>Designer: Shuki Kato</p>
+          Diagrams: Origami Nature Study
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <div class="overlay">Divine Dragon (Bahamut)</div>
+      <img class="gallery-image" src="Divine Dragon (Bahamut) - Satoshi Kamiya.jpg" alt="Divine Dragon (Bahamut)">
+      <div class="information-container">
+        Model: Divine Dragon (Bahamut)
+        <p>Designer: Satoshi Kamiya</p>
+        Diagrams: Works of Satoshi Kamiya 1995-2003
+      </div>
+    </div>
+
+    <script>
+      function toggleInformation(container) {
+        var image = container.querySelector('.gallery-image');
+        var informationContainer = container.querySelector('.information-container');
+        var information = container.querySelector('.information');
+
+        // Toggle the visibility of the image and information
+        if (image.style.display === 'block' || image.style.display === '') {
+          image.style.display = 'none';
+          informationContainer.style.display = 'block';
+
+          // Calculate and set the width based on the aspect ratio
+          var aspectRatio = image.width / image.height;
+          informationContainer.style.width = (container.clientHeight * aspectRatio) + 'px';
+          informationContainer.style.display = 'block';
+        } else {
+          image.style.display = 'block';
+          informationContainer.style.display = 'none';
+        }
+      }
+    </script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 1.25%;
+      }
+
+      .container {
+        height: 200px;
+        position: relative;
+      }
+
+      .gallery-image {
+        height: 100%;
+        width: auto;
+      }
+
+      .information-container {
+        display: none;
+        height: 100%;
+        background-color: lightgrey;
+        padding: 16px;
+        /* Set the aspect ratio automatically using JavaScript */
+      }
+
+      /* Some overlay */
+      .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: large;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s ease;
+        opacity: 0;
+      }
+
+      .gallery-image:hover .overlay {
+        opacity: 1;
+      }
+
+      /* mobile */
+      @media screen and (max-width: 600px) {
+        .image-gallery {
+          display: none;
+        }
+
+        .gallery-image {
+          width: 100%;
+          height: auto;
+        }
+
+        .container {
+          height: auto;
+        }
+      }
+    </style>

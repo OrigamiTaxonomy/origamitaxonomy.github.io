@@ -1,0 +1,31 @@
+---
+layout: default
+title: Tessellation Designs
+---
+
+<head>
+  <link href="../../all/all.css" type="text/css" rel="stylesheet">
+  <link href="tessellations.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Tessellations [<div id="countDisplay"></div>]</h2><br>
+  <div class="read-more-div">
+    <p id="overview">Tessellations are divided into two types, periodic and aperiodic tilings. Periodic tilings are the ones most people are familiar with, displaying a repeating pattern that can be continued indefinitely, while aperiodic tilings are
+      the opposite, without any large-scale repeating pattern. Aperiodic tilings are hard to come by, and the first such tiling ever discovered required thousands of different tiles. Over the years this number has been drastically reduced, until late
+      2022, when the number could get no lower with the discovery of a single tile solution, which was later realised to be an infinite set of solutions. All the tessellations below are periodic, though I do have an aperiodic modular design you can
+      check out under the “<a href="../modulars/modulars.html">Modulars</a>” section of my website (Kites and Darts).</p>
+      <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+  <br>
+  {% include designs.html %}
+</div>
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".tessellations").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>

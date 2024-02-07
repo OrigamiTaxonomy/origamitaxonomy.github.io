@@ -1,0 +1,70 @@
+.table-of-designs {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+}
+
+#countDisplay {
+  display: inline;
+}
+
+img {
+  width: 100%;
+/* Removes default padding at bottom */
+  display: block;
+}
+
+.content {
+  width: 23.5%;
+  padding: 5px;
+  padding-bottom: -5px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  background-color: white;
+}
+
+/* Two-column database instead of four */
+@media screen and (max-width: 900px) {
+  .content {
+    width: 49%;
+  }
+}
+
+/* One-colummn database instead of two */
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+
+/* important for some reason */
+.container {
+  position: relative;
+}
+
+/* Some overlay*/
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: large;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}

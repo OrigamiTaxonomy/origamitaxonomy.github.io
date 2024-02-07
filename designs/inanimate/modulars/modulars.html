@@ -1,0 +1,30 @@
+---
+layout: default
+title: Modular Designs
+---
+
+<head>
+  <link href="../../all/all.css" type="text/css" rel="stylesheet">
+  <link href="modulars.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Modulars [<div id="countDisplay"></div>]</h2><br>
+  <div class="read-more-div">
+    <p id="overview">This type of origami involves the joining of multiple units, usually by inserting flaps into pockets, to create a singular piece. While some people may not consider this “pure” origami, it gives the designer the power to create
+      things that would not be possible from a single sheet, such as creating figures with “holes” like my Tennis Racket design below. While such designs are theoretically possible from a single sheet, the thickness of the paper would make folding
+      far more difficult, sometimes physically impossible. Thus, I have no issue with modular designs myself.</p>
+    <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+  <br>
+  {% include designs.html %}
+</div>
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".modulars").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>

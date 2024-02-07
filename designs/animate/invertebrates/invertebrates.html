@@ -1,0 +1,31 @@
+---
+layout: default
+title: Invertebrate Designs
+---
+
+<head>
+  <link href="../../all/all.css" type="text/css" rel="stylesheet">
+  <link href="invertebrates.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Invertebrates [<div id="countDisplay"></div>]</h2><br>
+  <div class="read-more-div">
+    <p id="overview">Making up the vast majority of all animal species, invertebrates are animals that don't have a vertebral column, also known as a spine or backbone. They are one of the most diverse groups of animals, ranging in size from microscopic insects to
+      giant squids, with phyla such as arthropods, molluscs, annelids, echinoderms, flatworms, cnidarians, and sponges. One of the most difficult aspects in designing invertebrates is trying to replicate their often-numerous appendages. This calls
+      for
+      techniques such as box-pleating or circle-packing to create the base, and a large amount of shaping to thin the legs to a more realistic thickness, as in my ladybird design.</p>
+      <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+  <br>
+  {% include designs.html %}
+</div>
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".invertebrates").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>

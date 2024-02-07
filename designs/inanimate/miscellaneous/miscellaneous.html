@@ -1,0 +1,30 @@
+---
+layout: default
+title: Miscellaneous Designs
+---
+
+<head>
+  <link href="../../all/all.css" type="text/css" rel="stylesheet">
+  <link href="miscellaneous.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Miscellaneous [<div id="countDisplay"></div>]</h2><br>
+  <div class="read-more-div">
+    <p id="overview">This is the section for anything that does not fit into the other sections! It is always fun to fold things that are a bit different, and this often leads to unusual techniques, such as the locking system of my Traffic Cone
+      design below. I encourage you to have a close look at the world around you and wonder, could this be folded out of origami?</p>
+      <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+  <br>
+  {% include designs.html %}
+</div>
+
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".miscellaneous").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Fantasy Creature Designs
+---
+
+<head>
+  <link href="../../all/all.css" type="text/css" rel="stylesheet">
+  <link href="fantasy-creatures.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Fantasy Creatures [<div id="countDisplay"></div>]</h2><br>
+  <div class="read-more-div">
+    <p id="overview">Since the dawn of civilisation, humans have created stories and creatures to explain the world around us. Even in the age of science, there is still an innate love of the fantasy world and the wondrous creatures that occupy it. It is therefore unsurprising that this is one of the most popular paradigms in origami, though it is one I have only just begun to tap into in my own designs. I personally love the fantasy genre and cannot wait to try my hand at designing some more fantastical beasts.</p>
+    <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+  <br>
+  {% include designs.html %}
+</div>
+
+<script>
+  // Count elements with the class "flex-item-2"
+  const countAll = document.querySelectorAll(".fantasy-creatures").length;
+
+  // Display the count in the HTML document
+  document.getElementById("countDisplay").textContent = countAll;
+</script>
