@@ -1,0 +1,15 @@
+### Site metadata ###
+title: Origami Taxonomy
+locale: en_AU
+author: Sam Hesp
+
+### Build settings ###
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude: # Files to exclude from production
+  - LICENSE
+  - COPYING.LESSER
+  - README.md
+  - Makefile
