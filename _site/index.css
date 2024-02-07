@@ -1,0 +1,13 @@
+.pic {
+  width: 250px;
+  float: left;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+  border: 5px solid white;
+}
+
+@media screen and (max-width: 800px) {
+  .pic {
+    width: 100%;
+  }
+}

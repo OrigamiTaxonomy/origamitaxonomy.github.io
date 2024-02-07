@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* Reach to end of page */
+  margin: 0;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+.read-more:hover {
+  cursor: default;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  color: blue;
+  margin-bottom: 0;
+  background-color: #f2f2f2;
+}
+
+.read-more-div {
+  position: relative;
+  line-height: 1.2em;
+  max-height: 6em;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+/* For design pages only */
+.red {
+  color: red;
+}
+
+.a2 {
+  text-decoration: none;
+  color: black;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: black;
+}
+
+.across {
+  position: relative;
+  top: 0;
+  padding: 1.25%;
+  text-align: center;
+  margin: 0;
+  background-color: lightgrey;
+  width: 100%;
+  padding-left: 19.25%;
+  /* 18 + 1.25 */
+  float: right;
+}
+
+.sidenav {
+  overflow-y: auto;
+  left: 0;
+  height: 90%;
+  background-color: skyblue;
+  width: 18%;
+  position: fixed;
+}
+
+.filler {
+  background-color: skyblue;
+  width: 18%;
+  height: 100%;
+  position: fixed;
+}
+
+.right {
+  width: 80%;
+  float: right;
+  padding: 2.5% 5% 2.5% 2.5%;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.dropbtn,
+.link,
+.nav,
+.unique {
+  background-color: darkgrey;
+  padding: 16px;
+  border: none;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  display: block;
+}
+
+.dropdown-content a {
+  width: 100%;
+  background-color: lightgrey;
+  text-align: center;
+  display: block;
+  padding: 16px;
+}
+
+/* hide dropdown */
+.dropdown-content {
+  display: none;
+}
+
+/* Change colour on hover */
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.dropbtn:hover {
+  background-color: #ddd;
+}
+
+.nav:hover {
+  background-color: #ddd;
+}
+
+.levl-3:hover {
+  background-color: #ddd;
+}
+
+.level-2:hover {
+  background-color: #ddd;
+}
+
+.hover:hover {
+  color: dimgrey;
+}
+
+.a2:hover {
+  background-color: #ddd;
+}
+
+#hover:hover {
+  background-color: #ddd !important;
+}
+
+/* Makes Javascript work */
+.show {
+  display: block;
+}
+
+.level-2 {
+  width: 95% !important;
+  background-color: silver !important;
+  margin-left: 5%;
+}
+
+.smaller {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.menu-icon {
+  display: none;
+  border: none;
+  background-color: lightgrey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 0;
+}
+
+.mid-bar {
+  margin: 6px 0;
+}
+
+.menu-icon:hover > .bar {
+  background-color: dimgrey;
+  /* hover button, change colour of all three divs */
+}
+
+/* Copyright */
+.copyright {
+  width: 80%;
+  float: right;
+  text-align: center;
+  padding: 0 0 2.5%;
+}
+
+.no-underline2 {
+  display: none;
+}
+
+/* change to stacked navs */
+@media screen and (max-width: 900px) {
+  #myDIV {
+    display: none;
+  }
+  .copyright {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .dropdown-content {
+    position: relative;
+  }
+  .filler {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .right {
+    padding: 5%;
+    width: 100%;
+    float: none;
+  }
+  .sidenav {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .menu-icon {
+    display: inline;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Don't understand it but works a treat in centering one object inside of another */
+  }
+  .across {
+    padding-left: 1.25%;
+    /* completely centered */
+    float: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .no-underline {
+    display: none;
+  }
+  .no-underline2 {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+img {
+  height: 100%;
+}
+
+.container {
+  height: 250px;
+  position: relative;
+}
+
+.information-container {
+  display: none;
+  height: 100%;
+  background-color: lightgrey;
+  padding: 16px;
+  overflow: scroll;
+  /* Set the aspect ratio automatically using JavaScript */
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .information-container {
+    width: 100% !important;
+    height: auto;
+  }
+}
