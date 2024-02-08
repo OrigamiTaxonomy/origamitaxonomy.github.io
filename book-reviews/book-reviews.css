@@ -17,6 +17,11 @@ img {
   margin-bottom: 2%;
 }
 
+/* To counteract margin-bottom of ".book" */
+.copyright {
+  margin-top: -2%;
+}
+
 /* Two-column database instead of four */
 @media screen and (max-width: 900px) {
   .book {
