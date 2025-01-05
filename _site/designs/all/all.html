@@ -53,9 +53,9 @@
   <div class="filler">
     <div class="sidenav" id="myDIV">
       <!-- "/" links to homepage without adding index.html to web address-->
-      <a href="/" class="link a2">Home</a>
+      <a href="/" class="link a2" id="home">Home</a>
       <div class="dropdown">
-        <button onclick="myFunction1()" class="dropbtn">Designs <i class="fa fa-caret-down"></i></button>
+        <button onclick="myFunction1()" class="dropbtn" id="designs">Designs <i class="fa fa-caret-down"></i></button>
         <div id="myDropdown1" class="dropdown-content">
 
           <a class="level-2 unique a2" href="/designs/all/all.html" id="hover">All</a>
@@ -78,9 +78,9 @@
 
         </div>
       </div>
-      <a class="link a2" href="/gallery/gallery.html">Gallery</a>
-      <a class="link a2" href="/book-reviews/book-reviews.html">Book Reviews</a>
-      <a class="link a2" href="/useful-links/useful-links.html">Useful Links</a>
+      <a class="link a2" href="/gallery/gallery.html" id="gallery">Gallery</a>
+      <a class="link a2" href="/book-reviews/book-reviews.html" id="book-reviews">Book Reviews</a>
+      <a class="link a2" href="/useful-links/useful-links.html" id="useful-links">Useful Links</a>
 
     </div>
 
@@ -207,9 +207,9 @@ toggle between hiding and showing the dropdown content */
   </div>
   <div class="content fantasy-creatures">
     <div class="container">
-      <div class="overlay" onclick="openPDF('/designs/animate/fantasy-creatures/Demon Crease Pattern.pdf')">
-        Demon</div>
-      <img src="/designs/animate/fantasy-creatures/Demon.jpg" class="flex-item-2">
+      <div class="overlay" onclick="openPDF('/designs/animate/fantasy-creatures/Demon Head Crease Pattern.pdf')">
+        Demon Head</div>
+      <img src="/designs/animate/fantasy-creatures/Demon Head.jpg" class="flex-item-2">
     </div>
   </div>
   <div class="content vertebrates">
@@ -254,13 +254,6 @@ toggle between hiding and showing the dropdown content */
       <img src="/designs/animate/vertebrates/Fish.jpg" class="flex-item-2">
     </div>
   </div>
-  <div class="content tessellations">
-    <div class="container">
-      <div class="overlay" onclick="openPDF('/designs/inanimate/tessellations/Forest of Trees Crease Pattern.pdf')">
-        Forest of Trees</div>
-      <img src="/designs/inanimate/tessellations/Forest of Trees.jpg" class="flex-item-2">
-    </div>
-  </div>
   <div class="content plants">
     <div class="container">
       <div class="overlay" onclick="openPDF('/designs/animate/plants/Gnarly Tree Crease Pattern.pdf')">
@@ -277,16 +270,23 @@ toggle between hiding and showing the dropdown content */
   </div>
   <div class="content vertebrates">
     <div class="container">
-      <div class="overlay" onclick="openPDF('/designs/animate/vertebrates/Hummingbird Crease Pattern.pdf')">
-        Hummingbird</div>
-      <img src="/designs/animate/vertebrates/Hummingbird.jpg" class="flex-item-2">
+      <div class="overlay" onclick="openPDF('/designs/animate/vertebrates/Horse Crease Pattern.pdf')">
+        Horse</div>
+      <img src="/designs/animate/vertebrates/Horse.jpg" class="flex-item-2">
     </div>
   </div>
   <div class="content vertebrates">
     <div class="container">
-      <div class="overlay" onclick="openPDF('/designs/animate/vertebrates/Icelandic Horse Crease Pattern.pdf')">
-        Icelandic Horse</div>
-      <img src="/designs/animate/vertebrates/Icelandic Horse.jpg" class="flex-item-2">
+      <div class="overlay" onclick="openPDF('/designs/animate/vertebrates/Hummingbird (1) Crease Pattern.pdf')">
+        Hummingbird (1)</div>
+      <img src="/designs/animate/vertebrates/Hummingbird (1).jpg" class="flex-item-2">
+    </div>
+  </div>
+  <div class="content vertebrates">
+    <div class="container">
+      <div class="overlay" onclick="openPDF('/designs/animate/vertebrates/Hummingbird (2) Crease Pattern.pdf')">
+        Hummingbird (2)</div>
+      <img src="/designs/animate/vertebrates/Hummingbird (2).jpg" class="flex-item-2">
     </div>
   </div>
   <div class="content modulars">
@@ -301,13 +301,6 @@ toggle between hiding and showing the dropdown content */
       <div class="overlay" onclick="openPDF('/designs/animate/invertebrates/Ladybird Crease Pattern.pdf')">
         Ladybird</div>
       <img src="/designs/animate/invertebrates/Ladybird.jpg" class="flex-item-2">
-    </div>
-  </div>
-  <div class="content vertebrates">
-    <div class="container">
-      <div class="overlay" onclick="openPDF('/designs/animate/vertebrates/Long-tailed Sylph Crease Pattern.pdf')">
-        Long-tailed Sylph</div>
-      <img src="/designs/animate/vertebrates/Long-tailed Sylph.jpg" class="flex-item-2">
     </div>
   </div>
   <div class="content miscellaneous">
@@ -336,6 +329,13 @@ toggle between hiding and showing the dropdown content */
       <div class="overlay" onclick="openPDF('/designs/inanimate/miscellaneous/Periodic Table Crease Pattern.pdf')">
         Periodic Table</div>
       <img src="/designs/inanimate/miscellaneous/Periodic Table.jpg" class="flex-item-2">
+    </div>
+  </div>
+  <div class="content tessellations">
+    <div class="container">
+      <div class="overlay" onclick="openPDF('/designs/inanimate/tessellations/Pine Trees Crease Pattern.pdf')">
+        Pine Trees</div>
+      <img src="/designs/inanimate/tessellations/Pine Trees.jpg" class="flex-item-2">
     </div>
   </div>
   <div class="content modulars">
@@ -406,6 +406,13 @@ toggle between hiding and showing the dropdown content */
       <div class="overlay" onclick="openPDF('/designs/inanimate/tessellations/Stocking Stitch Crease Pattern.pdf')">
         Stocking Stitch</div>
       <img src="/designs/inanimate/tessellations/Stocking Stitch.jpg" class="flex-item-2">
+    </div>
+  </div>
+  <div class="content tessellations">
+    <div class="container">
+      <div class="overlay" onclick="openPDF('/designs/inanimate/tessellations/Suns Crease Pattern.pdf')">
+        Suns</div>
+      <img src="/designs/inanimate/tessellations/Suns.jpg" class="flex-item-2">
     </div>
   </div>
   <div class="content modulars">

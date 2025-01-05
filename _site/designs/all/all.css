@@ -4,6 +4,14 @@
   column-gap: 2%;
 }
 
+#designs {
+  background-color: royalblue;
+}
+
+#designs:hover {
+  background-color: #ddd;
+}
+
 #countDisplay {
   display: inline;
 }
