@@ -9,8 +9,8 @@ title: All Designs
 
 
 <div class="right">
-  <h2 class="heading">All Designs [<div id="countDisplay"></div>]</h2><br>
-  <p>If you don't want to navigate my nested dropdown menus, how about peruse every design on one page!</p><br>
+  <h2 class="heading">All Designs [<div id="countDisplay"></div>]*</h2><br>
+  <p>If you don't want to navigate my nested dropdown menus, how about peruse every design on one page!<br><br>*The observant reader will notice there is one more design than the number displayed. This is because one of the designs (*) incorporates a part of Robert Lang's cactus.</p><br>
 
 
   {% include designs.html %}
@@ -20,7 +20,8 @@ title: All Designs
 <script>
   // Count elements with the class "flex-item-2"
   const countAll = document.querySelectorAll(".content").length;
+  const adjustedCount = countAll - 1;
 
   // Display the count in the HTML document
-  document.getElementById("countDisplay").textContent = countAll;
+  document.getElementById("countDisplay").textContent = adjustedCount;
 </script>

@@ -4,6 +4,15 @@
   column-gap: 2%;
 }
 
+.asterisk {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: white; /* Adjust color */
+    font-size: 25px; /* Adjust size */
+    font-weight: bold;
+}
+
 #designs {
   background-color: grey;
 }
