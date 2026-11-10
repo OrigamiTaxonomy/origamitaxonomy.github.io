@@ -59,8 +59,8 @@
       <!-- "/" links to homepage without adding index.html to web address-->
       <a href="/" class="link a2" id="home">Home</a>
       <div class="dropdown">
-        <button onclick="myFunction1()" class="dropbtn" id="designs">Designs <i class="fa fa-caret-down"></i></button>
-        <div id="myDropdown1" class="dropdown-content">
+        <button onclick="myFunction1a()" class="dropbtn" id="designs">Designs <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown1a" class="dropdown-content">
 
           <a class="level-2 unique a2" href="/designs/all/all.html" id="hover">All</a>
 
@@ -82,7 +82,18 @@
 
         </div>
       </div>
-      <a class="link a2" href="/gallery/gallery.html" id="gallery">Gallery</a>
+
+      <div class="dropdown">
+        <button onclick="myFunction1b()" class="dropbtn" id="gallery">Gallery <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown1b" class="dropdown-content">
+
+          <a class="level-2 unique a2" href="/gallery/traditional.html" id="hover" id="traditional">Traditional</a>
+          <a class="level-2 unique a2" href="/gallery/modular.html" id="hover">Modular</a>
+          <a class="level-2 unique a2" href="/gallery/fibre.html" id="hover">Fibre</a>
+
+        </div>
+      </div>
+
       <a class="link a2" href="/book-reviews/book-reviews.html" id="book-reviews">Book Reviews</a>
       <a class="link a2" href="/useful-links/useful-links.html" id="useful-links">Useful Links</a>
 
@@ -94,8 +105,12 @@
 <script>
   /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-  function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
+  function myFunction1a() {
+    document.getElementById("myDropdown1a").classList.toggle("show");
+  }
+
+ function myFunction1b() {
+    document.getElementById("myDropdown1b").classList.toggle("show");
   }
 
   function myFunction2a() {

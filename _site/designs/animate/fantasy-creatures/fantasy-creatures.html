@@ -59,8 +59,8 @@
       <!-- "/" links to homepage without adding index.html to web address-->
       <a href="/" class="link a2" id="home">Home</a>
       <div class="dropdown">
-        <button onclick="myFunction1()" class="dropbtn" id="designs">Designs <i class="fa fa-caret-down"></i></button>
-        <div id="myDropdown1" class="dropdown-content">
+        <button onclick="myFunction1a()" class="dropbtn" id="designs">Designs <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown1a" class="dropdown-content">
 
           <a class="level-2 unique a2" href="/designs/all/all.html" id="hover">All</a>
 
@@ -82,7 +82,18 @@
 
         </div>
       </div>
-      <a class="link a2" href="/gallery/gallery.html" id="gallery">Gallery</a>
+
+      <div class="dropdown">
+        <button onclick="myFunction1b()" class="dropbtn" id="gallery">Gallery <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown1b" class="dropdown-content">
+
+          <a class="level-2 unique a2" href="/gallery/traditional.html" id="hover" id="traditional">Traditional</a>
+          <a class="level-2 unique a2" href="/gallery/modular.html" id="hover">Modular</a>
+          <a class="level-2 unique a2" href="/gallery/fibre.html" id="hover">Fibre</a>
+
+        </div>
+      </div>
+
       <a class="link a2" href="/book-reviews/book-reviews.html" id="book-reviews">Book Reviews</a>
       <a class="link a2" href="/useful-links/useful-links.html" id="useful-links">Useful Links</a>
 
@@ -94,8 +105,12 @@
 <script>
   /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-  function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
+  function myFunction1a() {
+    document.getElementById("myDropdown1a").classList.toggle("show");
+  }
+
+ function myFunction1b() {
+    document.getElementById("myDropdown1b").classList.toggle("show");
   }
 
   function myFunction2a() {
@@ -124,7 +139,7 @@ toggle between hiding and showing the dropdown content */
   <link href="fantasy-creatures.css" type="text/css" rel="stylesheet">
 </head>
 
-<div class="right">
+<div class="right justify">
   <h2 class="heading">Fantasy Creatures [<div id="countDisplay"></div>]</h2><br>
   <div class="read-more-div">
     <p id="overview">Since the dawn of civilisation, humans have created stories and creatures to explain the world around us. Even in the age of science, there is still an innate love of the fantasy world and the wondrous creatures that occupy it. It is therefore unsurprising that this is one of the most popular paradigms in origami, though it is one I have only just begun to tap into in my own designs. I personally love the fantasy genre and cannot wait to try my hand at designing some more fantastical beasts.</p>
@@ -303,6 +318,13 @@ toggle between hiding and showing the dropdown content */
       <img src="/designs/animate/vertebrates/Hummingbird (2).jpg" class="flex-item-2">
     </div>
   </div>
+  <div class="content miscellaneous">
+    <div class="container">
+      <div class="overlay" onclick="openPDF('/designs/inanimate/miscellaneous/Hyperbolic Surface Crease Pattern.pdf')">
+        Hyperbolic Surface</div>
+      <img src="/designs/inanimate/miscellaneous/Hyperbolic Surface.jpg" class="flex-item-2">
+    </div>
+  </div>
   <div class="content modulars">
     <div class="container">
       <div class="overlay" onclick="openPDF('/designs/inanimate/modulars/Kites and Darts Crease Pattern.pdf')">
@@ -345,6 +367,13 @@ toggle between hiding and showing the dropdown content */
       <img src="/designs/animate/plants/Palora Dragon Fruit (without thorns).jpg" class="flex-item-2">
     </div>
   </div>
+  <div class="content miscellaneous">
+  <div class="container">
+    <div class="overlay" onclick="openPDF('/designs/inanimate/miscellaneous/Penny Farthing Crease Pattern.pdf')">
+      Penny Farthing</div>
+    <img src="/designs/inanimate/miscellaneous/Penny Farthing.jpg" class="flex-item-2">
+  </div>
+</div>
   <div class="content miscellaneous">
     <div class="container">
       <div class="overlay" onclick="openPDF('/designs/inanimate/miscellaneous/Periodic Table Crease Pattern.pdf')">

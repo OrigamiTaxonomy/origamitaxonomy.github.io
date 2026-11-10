@@ -1,0 +1,116 @@
+---
+layout: default
+title: Gallery - Mathematical Fibre Art
+---
+
+<head>
+  <link href="gallery.css" type="text/css" rel="stylesheet">
+</head>
+
+<div class="right">
+  <h2 class="heading">Gallery - Mathematical Fibre Art</h2><br>
+  <div class="read-more-div justify">
+    <p id="overview">While origami will always be my first love, I do have a plethora of other hobbies which keep me entertained from time to time. I have known how to knit and crochet since I was very young (my granny taught me, as many do) but it was only recently that I decided to go a bit deeper and make more than a scarf or basic sampler. The first “real” project I made was Debbie New’s <a href="https://www.schoolhousepress.com/patterns/schoolhouse-press-patterns/two-klein-bottle-hats-1406.html" target="_blank">Klein Bottle Hat</a> which called for circular knitting needles – something I never knew existed but am now eternally grateful for! About a year later, around the time I was taking a topology class, I discovered Shiying Dong’s incredible “topological crochet” and after four attempts I finally completed her <a href="https://archive.bridgesmathart.org/2024/bridges2024-537.pdf" target="_blank">Saddle Trefoil Knot</a>. By some turn of fate, the lecturer was also into mathematical fibre art (and origami) which was a great source of inspiration, and for now I think that is what I will focus on with this medium.</p>
+    <br> <!-- for some reason this fixes the problem of overlapping text upon read less -->
+    <p class="read-more" id="read-more">... read more</p>
+  </div>
+
+  <br>
+
+  <p class="red">Note: click on any of the pictures below for more information.</p><br>
+
+  <br>
+
+  <div class="image-gallery">
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Hyperbolic Plane.jpg" alt="Hyperbolic Plane">
+      <div class="information-container">
+        <u>Model</u>: Hyperbolic Plane<br><br>
+        <u>Designer</u>: Daina Taimiņa<br><br>
+        <u>Instructions</u>: Crocheting Adventures with Hyperbolic Planes<br><br>
+        <u>Notes</u>: chain 20, increase every 4th stitch
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Hyperbolic Variant.jpg" alt="Hyperbolic Variant">
+      <div class="information-container">
+        <u>Model</u>: Hyperbolic Variant<br><br>
+        <u>Inspiration</u>: Daina Taimiņa<br><br>
+        <u>Notes</u>: chain 40, join loop, two rows normal in either direction then increase every 2nd stitch
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Klein Bottle Hat.jpg" alt="Klein Bottle Hat">
+      <div class="information-container">
+        <u>Model</u>: Klein Bottle Hat<br><br>
+        <u>Designer</u>: Debbie New<br><br>
+        <u>Instructions</u>: <a href="https://www.schoolhousepress.com/patterns/schoolhouse-press-patterns/two-klein-bottle-hats-1406.html" target="_blank">Schoolhouse Press</a>
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Möbius Strip.jpg" alt="Möbius Strip">
+      <div class="information-container">
+        <u>Model</u>: Möbius Strip<br><br>
+        <u>Inspiration</u>: Shiying Dong<br><br>
+        <u>Notes</u>: chain 75, join loop with one twist, final row with 200lb fishing line
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Pseudosphere.jpg" alt="Pseudosphere">
+      <div class="information-container">
+        <u>Model</u>: Pseudosphere<br><br>
+        <u>Designer</u>: Daina Taimiņa<br><br>
+        <u>Instructions</u>: Crocheting Adventures with Hyperbolic Planes<br><br>
+        <u>Notes</u>: magic loop 6 stitches, increase every 3rd stitch
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Saddle Trefoil Knot.jpg" alt="Saddle Trefoil Knot">
+      <div class="information-container">
+        <u>Model</u>: Saddle Trefoil Knot<br><br>
+        <u>Designer</u>: Shiying Dong<br><br>
+        <u>Instructions</u>: <a href="https://archive.bridgesmathart.org/2024/bridges2024-537.pdf" target="_blank">Bridges 2024 Conference Proceedings</a>
+      </div>
+    </div>
+
+    <div class="container" onclick="toggleInformation(this)">
+      <img class="gallery-image" src="Trefoil Knot Seifert Surface.jpg" alt="Trefoil Knot Seifert Surface">
+      <div class="information-container">
+        <u>Model</u>: Trefoil Knot Seifert Surface<br><br>
+        <u>Designer</u>: Shiying Dong<br><br>
+        <u>Instructions</u>: <a href="http://www.archive.bridgesmathart.org/2025/bridges2025-77.pdf" target="_blank">Bridges 2025 Conference Proceedings</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<script src="/assets/js/readmore.js">
+
+</script>
+<script>
+  function toggleInformation(container) {
+    var image = container.querySelector('.gallery-image');
+    var informationContainer = container.querySelector('.information-container');
+    var information = container.querySelector('.information');
+
+    // Toggle the visibility of the image and information
+    if (image.style.display === 'block' || image.style.display === '') {
+      image.style.display = 'none';
+      informationContainer.style.display = 'block';
+
+      // Calculate and set the width based on the aspect ratio
+      var aspectRatio = image.width / image.height;
+      informationContainer.style.width = (container.clientHeight * aspectRatio) + 'px';
+      informationContainer.style.display = 'block';
+    } else {
+      image.style.display = 'block';
+      informationContainer.style.display = 'none';
+    }
+  }
+</script>
